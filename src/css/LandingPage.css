@@ -1,0 +1,239 @@
+.baseContainer{
+    width: 100%;
+}
+
+.titleHeader, .whyContainer, .listContainer{
+    min-height: 100vh;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
+
+
+/* header css */
+.textField{
+    width: 40vw;
+}
+
+.titleMain{
+    font-size: 4vw;
+    color: #04009A;
+}
+
+.titleGreeting{
+    font-size: 2vw;
+    color: #3EDBF0;
+}
+
+.imageContainerHeader{
+    left: 10%;
+    width: 80%;
+    height: 30vw;
+    border-radius: 0 17% 0 17%;
+    z-index: 3;
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+}
+
+.imageContainerHeader:hover{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imageShadow{
+    background-color: #77ACF1;
+    width: 25vw;
+    height: 25vw;
+    z-index: 1;
+    margin-left: 18%;
+    margin-top: 20%;
+    opacity: 0.5;
+}
+
+
+
+/* break css */
+.breakContainer{
+    height: 25vh;
+    width: 100%;
+    background-color: white;
+}
+
+.logoBreak{
+    width: 10vw;
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+
+
+/* why css */
+.engSubtitle{
+    color: #3EDBF0;
+}
+
+.subtitle{
+    color: #04009A;
+}
+
+
+.cardWhy{
+    width: 30vh;
+    height: 40vh;
+    margin: 5vh auto 5vh auto;
+    background-color: white;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+    padding: 13% 10%;
+}
+
+.iconBoxCardWhy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 15%;
+    background-color: #daeaff;
+    opacity: 0.4;
+    margin-bottom: 4%;
+}
+
+.iconCardWhy{
+    font-size: 5vh;
+    color: #04009A;
+}
+
+.titleCardWhy{
+    color: #04009A;
+}
+
+.descCardWhy{
+    color: grey;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8vh;
+    height: 8vh;
+    background-color: #d1faff;
+    border-radius: 50%;
+    z-index: 3;
+    position: absolute;
+    right: 4vh;
+    top: 2vh;
+}
+
+.textCircle{
+    color: #3EDBF0;
+    position: absolute;
+}
+
+.imageWhy{
+    top: 5vh;
+    width: 30vw;
+    height: 40vw;
+    margin: auto;
+    border-radius: 0 17% 0 17%;
+    z-index: 3;
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+}
+
+.imageWhy:hover{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imageShadowWhy{
+    background-color: #04009A;
+    width: 80%;
+    height: 34vw;
+    z-index: 1;
+    margin-left: 16%;
+    margin-top: 30%;
+}
+
+.imageContainerWhy{
+    max-width: 50vw;
+    margin: auto;
+}
+
+
+
+/* list css */
+.marginColList{
+    height: 40vh;
+}
+
+.listCard{
+    background-color: white;
+    width: 100%;
+    height: 50vh;
+    border-radius: 2%;
+    margin-top: 2vh;
+    padding: 0%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 7px 0 rgba(0, 0, 0, 0.19);
+}
+
+.listCard:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.priceCard{
+    width: 100%;
+    margin-top: 1vh;
+}
+
+.cardTitle{
+    margin-top: 1vh;
+    color: #04009A;
+}
+
+.member{
+    text-align: end;
+    opacity: 0.8;
+}
+
+.pricelist{
+    color: #77ACF1;
+}
+
+
+
+
+
+/* footer */
+
+.footerContainer{
+    height: 50vh;
+    background-color: #04009A;
+    margin-top: 5vh;
+    width: 100vw;
+}
