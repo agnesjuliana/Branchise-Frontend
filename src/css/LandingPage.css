@@ -2,7 +2,7 @@
     width: 100%;
 }
 
-.titleHeader, .whyContainer, .listContainer{
+.titleHeader, .whyContainer{
     min-height: 100vh;
 }
 
@@ -82,7 +82,7 @@
     color: #3EDBF0;
 }
 
-.subtitle{
+.subtitle, .formTitle{
     color: #04009A;
 }
 
@@ -185,6 +185,10 @@
 
 
 /* list css */
+.listContainer{
+    min-height: 90vh;
+}
+
 .marginColList{
     height: 40vh;
 }
@@ -223,6 +227,27 @@
 
 .pricelist{
     color: #77ACF1;
+}
+
+
+/* form contact */
+/* .formTitle{
+
+} */
+
+.formContact{
+    height: 100vh;
+}
+
+
+.formCard{
+    background-color: white;
+    width: 70%;
+    height: 55%;
+    border-radius: 2%;
+    margin-top: 2vh;
+    padding: 0%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 7px 0 rgba(0, 0, 0, 0.19);
 }
 
 

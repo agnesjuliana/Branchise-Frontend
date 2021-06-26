@@ -14,6 +14,13 @@ export default function page() {
         { source: "1QKM2oHdU35utbhjc2Ky2Go0CVh77i31z", alt: "logo5" },
     ]
 
+    let product = [
+        { title: "Purple Coffe", price: "5.000.000", member: "170", image: "1zN6EQZKBgVfGeXsCDltygQFt25z8LmXR" },
+        { title: "Sweet Watermellon", price: "3.500.000", member: "91", image: "1eEW3NGao92_zxXQGMaFkZgK8VEwU19K1" },
+        { title: "Kopi Bear", price: "8.000.000", member: "93", image: "1j6Fpxk06GphM-qExwGaWyQPUMnrTxYLM" },
+        { title: "Boba Nana", price: "4.500.000", member: "120", image: "1grOGPw4Rvl9YrN8UHowtZXiD26XoiaBa" },
+    ]
+
     return (
         <>
             <NavBar />
@@ -24,7 +31,7 @@ export default function page() {
                     <div className="row titleHeader align-items-center">
                         <div className="col-lg-7 col-md-12">
                             <div className="textField">
-                                <h1 className="titleGreeting">Senang bertemu denganmu User</h1>
+                                <h1 className="titleGreeting">Senang bertemu denganmu</h1>
                                 <h1 className="titleMain"><b>Temukan Waralaba,<br />Mulai Bisnismu!</b></h1>
                                 {/* <h6 className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h6> */}
                             </div>
@@ -99,9 +106,48 @@ export default function page() {
 
                     {/* List start */}
                     <div className="row listContainer">
-                        <ListCard title="Purple Coffe" price="1000000" member="170" image="1zN6EQZKBgVfGeXsCDltygQFt25z8LmXR" />
+                        {product.map(item => (
+                            <ListCard title={item.title} price={item.price} member={item.member} image={item.image} />
+                        ))}
                     </div>
                     {/* List end */}
+
+                    {/* title form start */}
+                    <div className="row formTitle">
+                        <h1 className="mx-auto">Pelajari Lebih Lanjut</h1>
+                    </div>
+                    {/* title form end */}
+
+                    {/* form start */}
+                    <div className="row formContact">
+                        <div className="formCard mx-auto py-4 px-4">
+                            <div class="mb-3 row">
+                                <label class="col-sm-2 col-form-label">Nama</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputPassword" />
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputPassword" />
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label class="col-sm-2 col-form-label">No. Telp</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputPassword" />
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label class="col-sm-2 col-form-label">Pesan Tambahan</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* form end */}
 
 
                 </div>
