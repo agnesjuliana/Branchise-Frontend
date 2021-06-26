@@ -15,8 +15,8 @@ export default function page() {
     ]
 
     return (
-        <>  
-        <NavBar/>
+        <>
+            <NavBar />
             <div className="row justify-content-center baseContainer">
                 <div className="col-10">
 
@@ -59,8 +59,8 @@ export default function page() {
                     {/* why start */}
                     <div className="row whyContainer justify-content-center">
                         <div className="col-lg-5 col-md-12 imageContainerWhy">
-                                <img alt="why" className="imageWhy" src="https://drive.google.com/uc?id=1guUX2rtRH2tf1VHLtTF6de3uLNYXEQrL" />
-                                <div className="imageShadowWhy" />
+                            <img alt="why" className="imageWhy" src="https://drive.google.com/uc?id=1guUX2rtRH2tf1VHLtTF6de3uLNYXEQrL" />
+                            <div className="imageShadowWhy" />
                         </div>
                         <div className="col-lg-7 col-md-12">
                             <div className="row justify-content-end">
@@ -106,9 +106,26 @@ export default function page() {
 
                 </div>
 
-                <div className="row footerContainer">
-                    <div className="col-lg-4">
-
+                <div className="row footerContainer justify-content-center">
+                    <div className="col-10">
+                        <div className="row footerContent align-items-center justify-content-center">
+                            <div className="col-lg-3 col-md-12 contact">
+                                <img alt="branchise" className="footerImage" src="https://drive.google.com/uc?id=1dCSFpdn0mGpJ-bUeQwv-6qYe3j96m78i" />
+                            </div>
+                            <div className="col-lg-3 col-md-12 contact">
+                                <h4 ><b>GET IN TOUCH</b></h4>
+                                <h5 >dearpartner@branchise</h5>
+                                <h5 >0813-40997471</h5>
+                            </div>
+                            <div className="col-lg-6 col-md-12 mx-auto contact">
+                                <div className="row justify-content-end">
+                                    <div className="col-12">
+                                        <h1 className="cta"><b>Let's join & Collaborate</b></h1>
+                                        <h4>Every great work is started from a nice conversation & a cup of coffee. Share your business problem with us and let us be a part of the solution.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

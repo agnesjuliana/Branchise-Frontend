@@ -237,3 +237,16 @@
     margin-top: 5vh;
     width: 100vw;
 }
+
+.footerContent{
+    height: 50vh;
+}
+
+.contact{
+    color: white;
+}
+
+.footerImage{
+    height: 20vh;
+    margin-bottom: 2vh;
+}
