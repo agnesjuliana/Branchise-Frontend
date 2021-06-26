@@ -3,8 +3,9 @@ import "../css/LandingPage.css"
 import WhyCard from "../components/WhyCard"
 import ListCard from "../components/Listcard"
 import NavBar from "../components/NavBar"
+import React from "react"
 
-export default function page() {
+export default function Page() {
 
     const logo = [
         { source: "1QKM2oHdU35utbhjc2Ky2Go0CVh77i31z", alt: "logo1" },
@@ -20,6 +21,35 @@ export default function page() {
         { title: "Kopi Bear", price: "8.000.000", member: "93", image: "1j6Fpxk06GphM-qExwGaWyQPUMnrTxYLM" },
         { title: "Boba Nana", price: "4.500.000", member: "120", image: "1grOGPw4Rvl9YrN8UHowtZXiD26XoiaBa" },
     ]
+
+
+    const [values, setValues] = React.useState({
+        name: "",
+        email: "",
+        telp: "",
+        message: "",
+    })
+
+    const formContact = [
+        { label: "Nama", val: "name", theValue: values.name },
+        { label: "Email", val: "email", theValue: values.email },
+        { label: "No. Telp", val: "telp", theValue: values.telp },
+    ]
+
+    const handleChange = (prop) => (event) => {
+        setValues({ ...values, [prop]: event.target.value });
+    };
+
+    const save = () =>{
+        setValues({
+            ...values,
+            "name": "",
+            "email": "",
+            "telp": "",
+            "message": "",
+
+        })
+    }
 
     return (
         <>
@@ -120,30 +150,25 @@ export default function page() {
 
                     {/* form start */}
                     <div className="row formContact">
-                        <div className="formCard mx-auto py-4 px-4">
-                            <div class="mb-3 row">
-                                <label class="col-sm-2 col-form-label">Nama</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputPassword" />
+                        <div className="formCard mx-auto py-5 px-4">
+                            {formContact.map(item => (
+                                <div class="mb-3 row">
+                                    <label class="col-sm-2 col-form-label">{item.label}</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" value={item.theValue} onChange={handleChange(item.val)} />
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="mb-3 row">
-                                <label class="col-sm-2 col-form-label">Email</label>
-                                <div class="col-sm-10">
-                                    <input type="email" class="form-control" id="inputPassword" />
-                                </div>
-                            </div>
-                            <div class="mb-3 row">
-                                <label class="col-sm-2 col-form-label">No. Telp</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputPassword" />
-                                </div>
-                            </div>
+                            ))}
+
                             <div class="mb-3 row">
                                 <label class="col-sm-2 col-form-label">Pesan Tambahan</label>
                                 <div class="col-sm-10">
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" />
+                                    <textarea type="text" class="form-control" value={values.message} onChange={handleChange("message")} />
                                 </div>
+                            </div>
+
+                            <div className="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button class="btn btn-primary" type="button" onClick={save}>Kirim</button>
                             </div>
                         </div>
                     </div>
