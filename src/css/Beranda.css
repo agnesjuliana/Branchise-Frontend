@@ -1,0 +1,49 @@
+.dompetContainer,
+.pemasukanContainer {
+  height: 25vh;
+  margin-top: 3vh;
+}
+
+.dompetCard {
+  height: 20vh;
+  color: white;
+  background-color: #2870ff;
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 11px;
+}
+
+.pemasukanCard {
+  height: 15vh;
+  color: white;
+  background: linear-gradient(184.63deg, #ff725e 0%, #ffd553 103.88%);
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 11px;
+  padding: 5px;
+}
+
+.pengeluaranContainer {
+  height: 35vh;
+}
+
+.pengeluaranCard, .bahanbaku, .stan, .promosi {
+  height: 13vh;
+  margin-bottom: 2vh;
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1);
+  border-radius: 11px;
+}
+
+
+.bahanbaku {
+    background-color: #92B5FF;
+    color: white;
+}
+
+.stan{
+    background-color: #B992FF;
+    color: white;
+}
+
+.promosi{
+    background-color: #FF9292;
+    color: white;
+}
