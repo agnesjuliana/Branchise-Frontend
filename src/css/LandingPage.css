@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 .baseContainer{
     width: 100%;
 }
@@ -19,15 +25,28 @@
 }
 
 .titleMain{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     font-size: 4vw;
-    color: #04009A;
+    color: #000000;
 }
 
 .titleGreeting{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     font-size: 2vw;
-    color: #3EDBF0;
+    color: #2870FF;
+}
+.description{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #000000;
 }
 
+.biru{
+    font-weight: 600;
+    color: #2870FF;
+}
 .imageContainerHeader{
     left: 10%;
     width: 80%;
@@ -79,16 +98,20 @@
 
 /* why css */
 .engSubtitle{
-    color: #3EDBF0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2vw;
+    color: #2870FF;
 }
 
 .subtitle, .formTitle{
-    color: #04009A;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
 }
 
 
 .cardWhy{
-    width: 30vh;
+    width: 40vh;
     height: 40vh;
     margin: 5vh auto 5vh auto;
     background-color: white;
@@ -112,17 +135,17 @@
 
 .iconCardWhy{
     font-size: 5vh;
-    color: #04009A;
+    color: #2870FF;
 }
 
 .titleCardWhy{
-    color: #04009A;
+    color: #000000;
 }
 
 .descCardWhy{
-    color: grey;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #000000;
 }
 
 .circle{
@@ -131,7 +154,7 @@
     justify-content: center;
     width: 8vh;
     height: 8vh;
-    background-color: #d1faff;
+    background-color: #2870FF;
     border-radius: 50%;
     z-index: 3;
     position: absolute;
@@ -140,7 +163,7 @@
 }
 
 .textCircle{
-    color: #3EDBF0;
+    color: #ffffff;
     position: absolute;
 }
 
@@ -149,6 +172,7 @@
     width: 30vw;
     height: 40vw;
     margin: auto;
+    margin-top: -5%;
     border-radius: 0 17% 0 17%;
     z-index: 3;
     position: absolute;
@@ -169,12 +193,12 @@
 }
 
 .imageShadowWhy{
-    background-color: #04009A;
+    background-color: #2870FF;
     width: 80%;
     height: 34vw;
     z-index: 1;
     margin-left: 16%;
-    margin-top: 30%;
+    margin-top: 25%;
 }
 
 .imageContainerWhy{
@@ -217,7 +241,7 @@
 
 .cardTitle{
     margin-top: 1vh;
-    color: #04009A;
+    color: #000000;
 }
 
 .member{
@@ -258,7 +282,7 @@
 
 .footerContainer{
     height: 50vh;
-    background-color: #04009A;
+    background-color: #2870FF;
     margin-top: 5vh;
     width: 100vw;
 }
@@ -274,4 +298,30 @@
 .footerImage{
     height: 20vh;
     margin-bottom: 2vh;
+}
+
+/* loginregis */
+
+.loginregis{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.loginregis:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.loginregis2{
+    text-decoration: none;
+    color: #2870FF;
+}
+
+.loginregis2:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.space{
+    width: 1rem;
 }

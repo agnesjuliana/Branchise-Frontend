@@ -8,11 +8,11 @@ import React from "react"
 export default function Page() {
 
     const logo = [
-        { source: "1QKM2oHdU35utbhjc2Ky2Go0CVh77i31z", alt: "logo1" },
-        { source: "1QKM2oHdU35utbhjc2Ky2Go0CVh77i31z", alt: "logo2" },
-        { source: "1QKM2oHdU35utbhjc2Ky2Go0CVh77i31z", alt: "logo3" },
-        { source: "1QKM2oHdU35utbhjc2Ky2Go0CVh77i31z", alt: "logo4" },
-        { source: "1QKM2oHdU35utbhjc2Ky2Go0CVh77i31z", alt: "logo5" },
+        { source: "1KqReHnKKiAs1aEyfvB4tyiMGeMNs1M9r", alt: "logo1" },
+        { source: "1KqReHnKKiAs1aEyfvB4tyiMGeMNs1M9r", alt: "logo2" },
+        { source: "1KqReHnKKiAs1aEyfvB4tyiMGeMNs1M9r", alt: "logo3" },
+        { source: "1KqReHnKKiAs1aEyfvB4tyiMGeMNs1M9r", alt: "logo4" },
+        { source: "1KqReHnKKiAs1aEyfvB4tyiMGeMNs1M9r", alt: "logo5" },
     ]
 
     let product = [
@@ -58,17 +58,17 @@ export default function Page() {
                 <div className="col-10">
 
                     {/* header start */}
-                    <div className="row titleHeader align-items-center">
+                    <div className="row titleHeader align-items-center" id="Header">
                         <div className="col-lg-7 col-md-12">
                             <div className="textField">
                                 <h1 className="titleGreeting">Senang bertemu denganmu</h1>
                                 <h1 className="titleMain"><b>Temukan Waralaba,<br />Mulai Bisnismu!</b></h1>
-                                {/* <h6 className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h6> */}
+                                <h6 className="description">Kami <b className="biru">menghubungkan</b> pemilik waralaba dengan penerima waralaba <br/> dan <b className="biru">membantu</b> kedua pihak menjalankan bisnisnya</h6>
                             </div>
                         </div>
                         <div className="col-lg-5 col-md-12 align-item-center justify-content-center">
-                            <img alt="header" className="imageContainerHeader" src="https://drive.google.com/uc?id=187kg4QjjCJ0K-jonWrbl5SG15GIzTQPX" />
-                            <div className="imageShadow" />
+                            <img alt="header" width="700px" src="https://drive.google.com/uc?id=1nzfHkJv7z1npbZFKlm1nH6HRDQxZOSF8" />
+                            <div/>
                         </div>
                     </div>
                     {/* header end */}
@@ -85,7 +85,7 @@ export default function Page() {
                     {/* end break */}
 
                     {/* why title start */}
-                    <div className="row breakContainer align-items-end">
+                    <div className="row breakContainer align-items-end" id="Why">
                         <div className="textField">
                             <h4 className="engSubtitle">WHY FRANCHISE?<br /></h4>
                             <h1 className="subtitle">Kenapa harus waralaba?</h1>
@@ -106,6 +106,7 @@ export default function Page() {
                                     ketimbang memulai usaha sendiri
                                     dari nol.
                                 </WhyCard>
+                                <p className="space"></p>
                                 <WhyCard number="2" title="Produk Dikenal" className="fas fa-glass-cheers iconCardWhy">
                                     Waralaba membuat anda tidak perlu membangun branding produk dari 0.
                                     Produk yang diwaralabakan sudah banyak dikenal.
@@ -116,6 +117,7 @@ export default function Page() {
                                     Tidak memerlukan banyak pengalaman bisnis.
                                     Waralaba akan memberikan pengarahan penuh terhadap bisnis.
                                 </WhyCard>
+                                <p className="space"></p>
                                 <WhyCard number="4" title="Peluang Sukses" className="fas fa-award iconCardWhy">
                                     Pelaku bisnis waralaba memiliki peluang
                                     sukses lebih cepat daripada memulai usaha dari 0.
