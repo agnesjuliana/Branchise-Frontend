@@ -21,11 +21,11 @@ export default class SideBar extends React.Component {
 
     render() {
         const side = [
-            { path: "/beranda", title: "Beranda" },
-            { path: "/franchise", title: "Cari Franchise" },
-            { path: "/laporan", title: "Laporan" },
-            { path: "/central", title: "Central" },
-            { path: "/akunsaya", title: "Akun Saya" },
+            { path: "/beranda", title: "Beranda", icon:"bi:grid-1x2-fill" },
+            { path: "/franchise", title: "Cari Franchise", icon:"fluent:search-square-24-filled" },
+            { path: "/laporan", title: "Laporan", icon:"majesticons:file-report" },
+            { path: "/central", title: "Central", icon:"ion:storefront-sharp" },
+            { path: "/akunsaya", title: "Akun Saya", icon:"bx:bxs-user-pin" },
         ]
 
         return (
@@ -36,16 +36,20 @@ export default class SideBar extends React.Component {
                     <div id="sidebar-wrapper">
                         <ul class="sidebar-nav">
                             <li class="sidebar-brand">
-                                <Link className="nav-button" to="/"><img className="nav-logo" src="https://drive.google.com/uc?id=13jcExvhKKyXjvQ0Pz3opvOGPPdOQkqHA"/></Link>
+                                <Link className="nav-button" to="/"><img className="nav-logo" src="https://drive.google.com/uc?id=13jcExvhKKyXjvQ0Pz3opvOGPPdOQkqHA" /></Link>
                             </li>
-                            {side.map(item => (
-                                <li>
-                                    <a href="#"><Link className="nav-button active" to={item.path}>{item.title}</Link></a>
-                                </li>
-                            ))}
+                            <div className="sideBtnWrap">
+                                {side.map(item => (
+                                    <li className="sideBtn">
+                                        <a href="#"><Link className="nav-button btnLink" to={item.path}>
+                                        <span className="iconify" data-icon={item.icon} data-inline="false"/> {item.title}</Link></a>
+                                    </li>
+                                ))}
+                            </div>
                         </ul>
                     </div>
                     {/* <!-- /#sidebar-wrapper --> */}
+
 
                     {/* <!-- Page Content --> */}
                     <div id="page-content-wrapper">

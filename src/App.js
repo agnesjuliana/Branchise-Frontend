@@ -3,7 +3,8 @@ import {Switch, Route} from 'react-router-dom';
 
 // page import
 import Login from './pages/Login'
-import Registrasi from './pages/Register'
+import RegistrasiCustomer from './pages/RegisterCustomer'
+import RegistrasiFounder from './pages/RegisterFounder'
 import AkunSaya from './pages/AkunSaya'
 import Beranda from './pages/Beranda'
 import Central from './pages/Central'
@@ -17,7 +18,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={LandingPage}/>
         <Route path="/login" component={Login}/>
-        <Route path="/register" component={Registrasi}/>
+        <Route path="/registerCustomer" component={RegistrasiCustomer}/>
+        <Route path="/registerFounder" component={RegistrasiFounder}/>
         <Route path="/akunsaya" component={AkunSaya}/>
         <Route path="/beranda" component={Beranda}/>
         <Route path="/central" component={Central}/>

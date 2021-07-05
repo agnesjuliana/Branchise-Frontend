@@ -179,7 +179,7 @@ export default function Page() {
 
                 </div>
 
-                <div className="row footerContainer justify-content-center">
+                <div className="row footerContainer justify-content-center" id="Contact">
                     <div className="col-10">
                         <div className="row footerContent align-items-center justify-content-center">
                             <div className="col-lg-3 col-md-12 contact">

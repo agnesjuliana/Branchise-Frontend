@@ -1,0 +1,44 @@
+.reportCardWrap{
+    margin-top: 4vh;
+}
+
+.dateReport{
+    color: #2870FF;
+}
+
+.reportCard{
+    border-radius: 23px;
+    color: white;
+    width: 90%;
+    height: 12vh;
+    margin-top: 2vh;
+}
+
+.blue{
+    background-color: #92B5FF;
+}
+
+.purple{
+    background-color: #B992FF;
+}
+
+.red{
+    background-color: #FF9292;
+}
+
+.yellow{
+    background-color: #FFE298;
+}
+
+.cardCount{
+    background-color: white;
+    color: #92B5FF;
+    width: 80%;
+    height: 90%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.metered{
+    width: 95%;
+}

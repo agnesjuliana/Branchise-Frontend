@@ -99,6 +99,7 @@
     line-height: 60px;
 }
 
+
 .sidebar-nav > .sidebar-brand a {
     color: #999999;
 }
@@ -134,4 +135,23 @@
         position: relative;
         margin-right: 0;
     }
+}
+
+.sideBtn{
+    height: 10vh;
+}
+
+.sideBtnWrap{
+    margin-top: 5vh;
+    font-weight: bold;
+}
+
+.btnLink{
+    font-size: 18px;
+    
+}
+
+.iconify{
+    font-size: 30px;
+    margin-right: 10px;
 }

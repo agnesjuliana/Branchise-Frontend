@@ -1,59 +1,125 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import "../css/login.css"
-import { DropdownButton, Dropdown } from 'react-bootstrap';
-export default class Login extends Component {
-    render() {
-        return (
-            <div>
-                <table className="table">
-                    <tbody>
-                        <tr className="form-login">
-                            <td className="dekor">
-                                <div className="dekor">
-                                    <img src="https://drive.google.com/uc?id=1ybUjcsVN0T4gg65Z26ejKMbNTkYwUiw9" alt="dekor" />
-                                </div>
-                            </td>
-                            <td className="form-login">
-                                <div>
-                                    <form className="form-login">
-                                        <b><h3>Login</h3></b>
-                                        <b><h1>Selamat Datang!</h1></b>
-                                        <br />
-                                        <DropdownButton id="dropdown-basic-button" title="Siapa Kamu?">
-                                            <Dropdown.Item href="#/action-1">Franchisor</Dropdown.Item>
-                                            <Dropdown.Item href="#/action-2">Franchisee</Dropdown.Item>
-                                        </DropdownButton>
-                                        <br />
-                                        <div className="form-group">
-                                            <label>Email address</label>
-                                            <input type="email" className="form-control" placeholder="Enter email" />
-                                        </div>
-
-                                        <div className="form-group">
-                                            <label>Password</label>
-                                            <input type="password" className="form-control" placeholder="Enter password" />
-                                        </div>
-
-                                        <div className="form-group">
-                                            <div className="custom-control custom-checkbox">
-                                                <input type="checkbox" className="custom-control-input" id="customCheck1" />
-                                                <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
-                                            </div>
-                                        </div>
-
-                                        <button type="submit" className="btn btn-primary btn-block">Submit</button>
-                                        <p className="forgot-password text-right">
-                                            Forgot <a href="#">password?</a>
-                                        </p>
-                                    </form>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
 
 
-            </div >
-        );
+
+import axios from "axios"
+import { base_url } from "../config"
+
+
+export default function Register() {
+
+    const [values, setValues] = useState({
+        email: "",
+        password: "",
+        role: "",
+        message: "",
+        logged: "false"
+    });
+
+    const regist = event => {
+        let role = (values.role).toLowerCase()
+        let data = {
+            email: values.email,
+            password: values.password
+        }
+
+        if (role === "founder") {
+            let url_founder = base_url + "/founder/login"
+            axios.post(url_founder, data)
+                .then(response => {
+                    setValues({...values,"logged":response.data.logged})
+                    if (values.logged){
+                        let user = response.data.data
+                        let token = response.data.token
+                        localStorage.setItem("user", JSON.stringify(user))
+                        localStorage.setItem("token", token)
+                        localStorage.setItem("role", "founder")
+                        window.location = "/beranda"
+                    }else {
+                        console.log("belum masuk gais")
+                    }
+                })
+                .catch(error => console.log(error))
+        } else {
+            let url_customer = base_url + "/customer/login"
+            axios.post(url_customer, data)
+                .then(response => {
+                    setValues({...values,"logged":response.data.logged})
+                    if (values.logged){
+                        let user = response.data.data
+                        let token = response.data.token
+                        localStorage.setItem("user", JSON.stringify(user))
+                        localStorage.setItem("token", token)
+                        localStorage.setItem("role", "customer")
+                        window.location = "/beranda"
+
+                    }else {
+                        console.log("belum masuk gais")
+                    }
+                })
+                .catch(error => console.log(error))
+        }
+
     }
+
+    const form = [
+        { label: "Email", type: "email", ph: "Enter Email", val: "email", value: values.email },
+        { label: "Password", type: "password", ph: "Enter Password", val: "password", value: values.password },
+    ]
+
+    const handleChange = (prop) => (event) => {
+        setValues({ ...values, [prop]: event.target.value });
+        // console.log(values)
+    };
+
+
+    return (
+        <div>
+            <div className="row registWrap">
+                <div className="col-lg-7 dekor">
+                    <div className="row justify-content-center">
+                        <img className="mx-4 dekorImage" src="https://drive.google.com/uc?id=1ZBPC4GHwM79Nx6NsYxLUp9Lm2RwFU9VJ" alt="dekor" />
+                    </div>
+                </div>
+                <div className="col-lg-5 form-login">
+                    <div>
+                        <form className="form-login">
+                            <b><h3>login</h3></b>
+                            <b><h1>Selamat Datang!</h1></b>
+                            <h3>Anda Login sebagai <span className="blueText">{values.role}</span></h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="customer" onClick={handleChange("role")} />
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Customer
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="founder" onClick={handleChange("role")} />
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Founder
+                                </label>
+                            </div>
+                            <h1><br /></h1>
+
+                            {form.map(item => (
+                                <div className="form-group">
+                                    <label>{item.label}</label>
+                                    <input type={item.type} className="form-control" placeholder={item.ph} value={item.value} onChange={handleChange(item.val)} />
+                                </div>
+                            ))}
+
+
+                            <button type="submit" className="btn btn-primary btn-block" onClick={ev => regist(ev)}>Submit</button>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div >
+    );
+
 }

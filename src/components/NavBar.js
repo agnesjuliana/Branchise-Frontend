@@ -15,7 +15,7 @@ export default class NavBar extends Component {
                                 <div className="navbar-nav mx-auto">
                                     <a className="nav-link active" aria-current="page" href="#Header">About</a>
                                     <a className="nav-link" href="#Why">Service</a>
-                                    <a className="nav-link" href="#">Contact</a>
+                                    <a className="nav-link" href="#Contact">Contact</a>
                                 </div>
                             </div>
                             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@ export default class NavBar extends Component {
                             <div className="navbar-nav mx-auto">
                                 <button type="button" className="btn btn-primary loginregis"><Link className="loginregis" to="/Login">Sign In</Link></button>
                                 <div className="space"></div>
-                                <button type="button" className="btn btn-outline-primary" ><Link className="loginregis2" to="/register">Sign Up</Link></button>
+                                <button type="button" className="btn btn-outline-primary" ><Link className="loginregis2" to="/registerCustomer">Sign Up</Link></button>
                             </div>
                         </div>
                     </div>

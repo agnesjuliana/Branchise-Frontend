@@ -53,3 +53,7 @@
 .btnUploadWrap{
     margin-top: 20px;
 }
+
+.userName{
+  text-transform: capitalize;
+}

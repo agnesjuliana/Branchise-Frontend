@@ -1,9 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import SideBar from "../components/SideBar";
 import "../css/Franchise.css"
 import FranchiseCard from "../components/FranchiseCard";
 
+import axios from "axios"
+import { base_url } from "../config"
+
 export default function Page() {
+
+    const [data, setData] = useState([])
+
+    useEffect(() => {
+        getData()
+        console.log(data)
+    }, [])
+
+    // Axios operation
+    const getData = () => {
+        let url = base_url + "/franchise"
+        axios.get(url)
+            .then(res => {
+                setData(res.data)
+            })
+            .catch(err => {
+                console.log(err)
+            })
+    }
+
     return (
         <>
             <SideBar>
@@ -21,7 +44,9 @@ export default function Page() {
                     <div className="franchiseContainer">
                         <h4>Beverage</h4>
                         <div className="row">
-                            <FranchiseCard pict="1eEW3NGao92_zxXQGMaFkZgK8VEwU19K1" name="Chacha Coffe"/>
+                            {data.map(item => (
+                                <FranchiseCard pict={item.image} name={item.name} />
+                            ))}
                         </div>
                     </div>
                 </>
