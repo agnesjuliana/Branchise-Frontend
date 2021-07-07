@@ -18,8 +18,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={LandingPage}/>
         <Route path="/login" component={Login}/>
-        <Route path="/registercustomer" component={RegistrasiCustomer}/>
-        <Route path="/registerfounder" component={RegistrasiFounder}/>
+        <Route path="/register/customer" component={RegistrasiCustomer}/>
+        <Route path="/register/founder" component={RegistrasiFounder}/>
         <Route path="/akunsaya" component={AkunSaya}/>
         <Route path="/beranda" component={Beranda}/>
         <Route path="/central" component={Central}/>

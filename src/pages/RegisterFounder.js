@@ -70,7 +70,7 @@ export default function Register() {
                             <b><h3>Register</h3></b>
                             <b><h1>Selamat Datang!</h1></b>
                             <h3>Anda mendaftar sebagai <span className="blueText">Founder</span></h3>
-                            <button type="button" className="btn btn-outline-primary" ><Link to="/registerCustomer">Saya ingin mendaftar sebagai "Customer"</Link></button>
+                            <button type="button" className="btn btn-outline-primary" ><Link to="/register/Customer">Saya ingin mendaftar sebagai "Customer"</Link></button>
                             <h1><br /></h1>
 
                             {form.map(item => (
