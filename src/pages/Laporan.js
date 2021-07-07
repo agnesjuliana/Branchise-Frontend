@@ -9,7 +9,7 @@ export default function Page() {
             <SideBar>
                 <>
                     <div className="row">
-                        <div className="col-lg-7 mx-3">
+                        <div className="col-lg-7 mx-3 my-3">
                             <h1>Laporan Keseharian</h1>
                             <h3 className="dateReport">9 July, 2021</h3>
 
