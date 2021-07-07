@@ -49,7 +49,7 @@ export default function Register() {
         { label: "Name", type: "text", ph: "Nama Lengkap", val: "name", value: values.name },
         { label: "Alamat", type: "text", ph: "Alamat Rumah", val: "alamat", value: values.alamat },
         { label: "Nomor Telpon", type: "text", ph: "Nomor Telepon", val: "telp", value: values.telp },
-        { label: "NIK", type: "text", ph: "NIK", val: "nik", value: values.nik },
+        { label: "NIK", type: "number", ph: "NIK", val: "nik", value: values.nik },
         { label: "NPWP", type: "text", ph: "NPWP", val: "npwp", value: values.npwp },
         { label: "Email", type: "email", ph: "Enter Email", val: "email", value: values.email },
         { label: "Password", type: "password", ph: "Enter Password", val: "password", value: values.password },
