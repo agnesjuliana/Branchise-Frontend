@@ -24,43 +24,45 @@ export default function Register() {
             password: values.password
         }
 
-        if (role === "founder") {
-            let url_founder = base_url + "/founder/login"
-            axios.post(url_founder, data)
-                .then(response => {
-                    setValues({...values,"logged":response.data.logged})
-                    if (values.logged){
-                        let user = response.data.data
-                        let token = response.data.token
-                        localStorage.setItem("user", JSON.stringify(user))
-                        localStorage.setItem("token", token)
-                        localStorage.setItem("role", "founder")
-                        window.location = "/beranda"
-                    }else {
-                        console.log("belum masuk gais")
-                    }
-                })
-                .catch(error => console.log(error))
-        } else {
+        if (role === "customer"){
             let url_customer = base_url + "/customer/login"
             axios.post(url_customer, data)
-                .then(response => {
-                    setValues({...values,"logged":response.data.logged})
-                    if (values.logged){
-                        let user = response.data.data
-                        let token = response.data.token
-                        localStorage.setItem("user", JSON.stringify(user))
-                        localStorage.setItem("token", token)
-                        localStorage.setItem("role", "customer")
-                        window.location = "/beranda"
-
-                    }else {
-                        console.log("belum masuk gais")
-                    }
-                })
-                .catch(error => console.log(error))
+            .then(response=>{
+                setValues({...values,"logged":response.data.logged})
+                if (values.logged){
+                    setValues({...values,"role":"siswa"})
+                    let user = response.data.data
+                    let token = response.data.token
+                    localStorage.setItem("user", JSON.stringify(user))
+                    localStorage.setItem("token", token)
+                    localStorage.setItem("role", "customer")
+                    window.location = "/beranda"
+                }else {
+                    console.log("belum masuk gais")
+                }
+            })
+            .catch(error => console.log(error))
+        }else{
+            let url_founder = base_url + "/founder/login"
+            axios.post(url_founder, data)
+            .then(response=>{
+                setValues({...values,"logged":response.data.logged})
+                if (values.logged){
+                    setValues({...values,"role":response.data.data.role})
+                    // console.log(values)
+                    let user = response.data.data
+                    let token = response.data.token
+                    let fixRole = (response.data.data.level).toLowerCase()
+                    localStorage.setItem("user", JSON.stringify(user))
+                    localStorage.setItem("token", token)
+                    localStorage.setItem("role", fixRole)
+                    window.location = "/beranda"
+                }else {
+                    console.log("belum masuk gais")
+                }
+            })
+            .catch(error => console.log(error))
         }
-
     }
 
     const form = [
@@ -70,7 +72,7 @@ export default function Register() {
 
     const handleChange = (prop) => (event) => {
         setValues({ ...values, [prop]: event.target.value });
-        // console.log(values)
+        console.log(values)
     };
 
 

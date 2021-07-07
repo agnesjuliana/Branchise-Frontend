@@ -1,19 +1,20 @@
 .dompetContainer,
 .pemasukanContainer {
   height: 25vh;
-  margin-top: 3vh;
+  margin-top: 5vh;
 }
 
 .dompetCard {
-  height: 20vh;
+  height: 22vh;
   color: white;
   background-color: #2870ff;
   box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.2);
   border-radius: 11px;
+  background-image: url('https://drive.google.com/file/d/1CIHSeuLP5BDiU0KLPZahWY0LyesRZWsU/view?usp=sharing');
 }
 
 .pemasukanCard {
-  height: 15vh;
+  height: 17.5vh;
   color: white;
   background: linear-gradient(184.63deg, #ff725e 0%, #ffd553 103.88%);
   box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.2);
@@ -23,6 +24,7 @@
 
 .pengeluaranContainer {
   height: 35vh;
+  margin-top: 1vh;
 }
 
 .pengeluaranCard, .bahanbaku, .stan, .promosi {
@@ -32,6 +34,17 @@
   border-radius: 11px;
 }
 
+.arrowOut{
+  color: #757575;
+  /* width: 4vh; */
+  font-size: 6vh;
+}
+
+.arrowIn{
+  color: #2870FF;
+  font-size: 6vh;
+
+}
 
 .bahanbaku {
     background-color: #92B5FF;
@@ -46,4 +59,45 @@
 .promosi{
     background-color: #FF9292;
     color: white;
+}
+
+/* .dompetBack{
+  position: absolute;
+  left: 10.18%;
+  right: 0%;
+  top: 4.57%;
+  bottom: 0%;  
+  width: 233px;
+  height: 219px;
+} */
+
+.progressImg{
+  width: 100%;
+  margin-bottom: 4vh;
+}
+
+.colorRed, .colorBlue, .colorPurp, .colorDarkblue{
+  font-size: 80%;
+
+}
+
+.colorRed{
+  color: #FF9292;
+}
+
+.colorBlue{
+  color: #92B5FF;
+
+}
+
+.colorPurp{
+  color: #B992FF;
+}
+
+.colorDarkblue{
+  color: #2870ff;
+}
+
+.historyContainer{
+  margin-top: 2.5vh;
 }

@@ -24,7 +24,7 @@ export default class NavBar extends Component {
                         </div>
                         <div className="col-2">
                             <div className="navbar-nav mx-auto">
-                                <button type="button" className="btn btn-primary loginregis"><Link className="loginregis" to="/Login">Sign In</Link></button>
+                                <button type="button" className="btn btn-primary loginregis"><Link className="loginregis" to="/beranda">Sign In</Link></button>
                                 <div className="space"></div>
                                 <button type="button" className="btn btn-outline-primary" ><Link className="loginregis2" to="/registerCustomer">Sign Up</Link></button>
                             </div>
