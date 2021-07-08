@@ -11,6 +11,9 @@ import Central from './pages/Central'
 import Franchise from './pages/Franchise'
 import Laporan from './pages/Laporan'
 import LandingPage from '../src/pages/LandingPage'
+import Transaksi from '../src/pages/Transaksi'
+import Profile from '../src/pages/Profile'
+import Mou from '../src/pages/Mou'
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
         <Route path="/central" component={Central}/>
         <Route path="/franchise" component={Franchise}/>
         <Route path="/laporan" component={Laporan}/>
+        <Route path="/transaksi" component={Transaksi}/>
+        <Route path="/profile" component={Profile}/>
+        <Route path="/mou" component={Mou}/>
       </Switch>
     </div>
   );

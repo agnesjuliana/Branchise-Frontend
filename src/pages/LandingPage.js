@@ -59,15 +59,15 @@ export default function Page() {
 
                     {/* header start */}
                     <div className="row titleHeader align-items-center" id="Header">
-                        <div className="col-lg-7 col-md-12">
+                        <div className="col-lg-7 col-sm-12">
                             <div className="textField">
                                 <h1 className="titleGreeting">Senang bertemu denganmu</h1>
                                 <h1 className="titleMain"><b>Temukan Waralaba,<br />Mulai Bisnismu!</b></h1>
                                 <h6 className="description">Kami <b className="biru">menghubungkan</b> pemilik waralaba dengan penerima waralaba <br/> dan <b className="biru">membantu</b> kedua pihak menjalankan bisnisnya</h6>
                             </div>
                         </div>
-                        <div className="col-lg-5 col-md-12 align-item-center justify-content-center">
-                            <img alt="header" width="700px" src="https://drive.google.com/uc?id=1nzfHkJv7z1npbZFKlm1nH6HRDQxZOSF8" />
+                        <div className="col-lg-5 col-sm-12 align-item-center justify-content-center">
+                            <img alt="header" className="headerPict" src="https://drive.google.com/uc?id=1nzfHkJv7z1npbZFKlm1nH6HRDQxZOSF8" />
                             <div/>
                         </div>
                     </div>

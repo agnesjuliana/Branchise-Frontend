@@ -1,0 +1,96 @@
+.wrap {
+  width: 100%;
+  background-color: #f5f9ff;
+}
+
+.progresslineContainer {
+  height: 10vh;
+  background: #ffffff;
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.pickCard,
+.paymentCard, .profileCard, .syaratCard, .mouCard {
+  background: #ffffff;
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 4vh;
+}
+
+.pickCard, .paymentCard {
+  width: 100%;
+  min-height: 45vh
+}
+
+
+.pickImg{
+    width: 100%;
+    
+}
+
+.kategoriText{
+    color: white;
+    background-color: #2870FF;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.priceText{
+    color: #2870FF;
+    margin-top: 2vh;
+}
+
+.paymentImg{
+    width: 30%;
+}
+
+
+/* css profile */
+.profileCard{
+    width: 100%;
+    height: auto;
+    padding: 4vh;
+}
+
+.profileImageSquare{
+    width: 80%;
+}
+
+.profileUploadBtn, .profileNextBtn{
+    background-color: #2870FF;
+    color: white;
+}
+
+.profileUploadBtn{
+    width: 70%;
+}
+
+.profileNextBtn{
+    width: 20%;
+    height: 7vh;
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1);
+    font-size: 3vh;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.textNone{
+    text-decoration: none;
+
+}
+
+
+/* css mou */
+.mouCard{
+    height: 80vh;
+    text-align: center;
+
+}
+
+.check{
+    font-size: 20vh;
+    color: #2870FF;
+}

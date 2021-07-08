@@ -9,7 +9,7 @@ export default function Page() {
                 <>
                     <div className="row">
                         <div className="col-lg-5 mx-3">
-                            <h1 className="centralTitle">boba nana</h1>
+                            <h1 className="centralTitle">Cafe Mo</h1>
                             <div class="card centralCard">
                                 <img src="https://drive.google.com/uc?id=1grOGPw4Rvl9YrN8UHowtZXiD26XoiaBa" class="centralImage" alt="central" />
                                 <div class="card-body">

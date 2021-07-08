@@ -80,6 +80,10 @@ body{
     opacity: 0.5;
 }
 
+.headerPict{
+    width: 100%;
+}
+
 
 
 /* break css */
@@ -219,11 +223,18 @@ body{
 .listCard{
     background-color: white;
     width: 100%;
-    height: 50vh;
+    min-height: 50vh;
     border-radius: 2%;
     margin-top: 2vh;
     padding: 0%;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 7px 0 rgba(0, 0, 0, 0.19);
+}
+
+.listImg{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 2% 2% 0% 0%;
 }
 
 .listCard:hover{
@@ -324,3 +335,4 @@ body{
 .space{
     width: 1rem;
 }
+

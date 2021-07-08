@@ -3,9 +3,9 @@ import React from 'react'
 export default class ListCard extends React.Component {
     render() {
         return (
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-3 col-md-6 col-sm-10 my-3">
                 <div className="card listCard align-items-center">
-                    <img src={"https://drive.google.com/uc?id="+this.props.image} className="card-img-top" alt="brand1" />
+                    <img src={"https://drive.google.com/uc?id="+this.props.image} className="listImg" alt="brand1" />
                     <h4 className="cardTitle">{this.props.title}</h4>
                     <div className="row priceCard">
                         <div className="col">
