@@ -183,7 +183,8 @@ export default function Page() {
                     <div className="col-10">
                         <div className="row footerContent align-items-center justify-content-center">
                             <div className="col-lg-3 col-md-12 contact">
-                                <img alt="branchise" className="footerImage" src="https://drive.google.com/uc?id=1dCSFpdn0mGpJ-bUeQwv-6qYe3j96m78i" />
+                                {/* <img alt="branchise" className="footerImage" src="https://drive.google.com/uc?id=1dCSFpdn0mGpJ-bUeQwv-6qYe3j96m78i" /> */}
+                                <h5>Suported by ardalabs.io</h5>
                             </div>
                             <div className="col-lg-3 col-md-12 contact">
                                 <h4 ><b>GET IN TOUCH</b></h4>
