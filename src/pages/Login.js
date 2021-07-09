@@ -36,7 +36,7 @@ export default function Register() {
                     localStorage.setItem("user", JSON.stringify(user))
                     localStorage.setItem("token", token)
                     localStorage.setItem("role", "customer")
-                    window.location = "/beranda"
+                    window.location = "/franchise"
                 }else {
                     console.log("belum masuk gais")
                 }

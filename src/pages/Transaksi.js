@@ -28,7 +28,7 @@ export default function page() {
                                         <div className="col-lg-7 align-self-center">
                                             <h4>{franchise.name}</h4>
                                             <h5>Kategori <span className="kategoriText">{franchise.category}</span></h5>
-                                            <h4 className="priceText"><strong>Rp 1.000.000</strong></h4>
+                                            <h4 className="priceText"><strong>Rp {franchise.price}</strong></h4>
 
                                             <div className="pusatContainer my-4">
                                                 <h5>Tentang Pusat</h5>

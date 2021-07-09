@@ -91,7 +91,7 @@ export default function Page() {
                     {/* <!-- Modal --> */}
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg">
-                            <div class="modal-content modalCard">
+                            <div class="modal-content">
                                 <div class="modal-body">
                                     <div className="row">
                                         <div className="col-lg-5">
@@ -99,8 +99,14 @@ export default function Page() {
                                         </div>
                                         <div className="col-lg-7">
                                             <h4>{values.name}</h4>
+                                            <h5>Kategori <span className="kategoriText">{values.category}</span></h5>
+                                            <h4 className="priceText"><strong>Rp {values.price}</strong></h4>
                                             <h7>{values.description}</h7>
-                                            <h4><strong>Rp {values.price}</strong></h4>
+                                            <div className="pusatContainer my-4">
+                                                <h5>Tentang Pusat</h5>
+                                                <h6>Alamat : Jl in aja dulu, no.131, Kota Malang, Jawa Timur, Indonesia</h6>
+                                                <h6>Contact : 0821-xxxxxxxxx</h6>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

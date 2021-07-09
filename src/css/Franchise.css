@@ -55,6 +55,7 @@
   text-align: center;
 }
 
-/* .modalCard {
-  height: 65vh;
-} */
+.modalCard {
+  width: 80vw;
+  background-color: white;
+}
