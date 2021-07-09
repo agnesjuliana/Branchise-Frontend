@@ -80,11 +80,27 @@ export default function page() {
                             <div className="col-lg-11 mx-3 my-4">
                                 <div className="syaratCard">
                                     <h4>Syarat dan Ketentuan</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus efficitur lacus tincidunt tortor dignissim bibendum sed eu nulla. Curabitur fermentum porta velit, sed auctor mi condimentum eu. Nunc auctor pharetra neque, vel mollis est viverra eu. Duis sollicitudin congue scelerisque. Phasellus rhoncus et lorem eu imperdiet. Pellentesque non mollis est. Maecenas imperdiet arcu eros, ut pulvinar dui tincidunt ac. Praesent bibendum mi sed odio tincidunt, eget interdum augue euismod. Nulla fringilla nisi erat, nec rhoncus nibh luctus et. Proin sit amet ultricies dui. Mauris ultrices sapien eu quam condimentum pharetra. Mauris volutpat at velit non porttitor. Suspendisse et quam porttitor, sagittis sem non, vestibulum lorem. Morbi nec nibh sollicitudin, laoreet ligula vitae, laoreet neque.
+                                    <p>
+                                        Pada hari ini, tanggal XX XXXXX XXXX, Franchisor dan Franchisee sepakat untuk mengikatkan diri dalam perjanjian kerja sama Franchise dengan menerangkan terlebih dahulu hal-hal sebagai berikut:
+                                    </p>
+                                    <ul>
+                                        <li>Bahwa Franchisor setuju memberikan izin dan membantu Franchisee menjual produk dengan Brand Seblak DuaRR milik Franchisor di tempat Franchisee.</li>
+                                        <li>Bahwa Franchisee berjanji akan mengawasi, menjaga dan mengendalikan mutu produk yang dijual serta memberikan pelayanan terbaik bagi setiap konsumen sesuai dengan standar yang ditetapkan oleh Franchisor.</li>
+                                        <li>Bahwa Franchisor memberikan hak eksklusif kepada Franchisee untuk membuka 1 buah Kedai</li>
+                                        <li>Franchisor memberikan izin kepada Franchisee dengan nama {franchise.name}, untuk itu Franchisee dapat menggunakan merek dan sistem secara bersamaan dengan Franchisee lainnya yang sudah diizinkan oleh Franchisor sebelumnya.</li>
+                                        <li>Franchisee setuju membeli bahan bahan yang disepakati dan menjalankan serta mematuhi semua ketetapan dan persyaratan-persyaratan yang ditetapkan oleh Franchisor.</li>
+                                    </ul>
 
-                                        Nam in interdum mi, a sagittis lacus. Aliquam nisi tellus, commodo eu orci a, eleifend dapibus justo. Sed ac lectus sapien. Morbi libero massa, vehicula ac viverra vel, gravida non mi. Fusce non erat dapibus, tincidunt sapien non, consequat diam. Duis eget gravida nisl, eu scelerisque neque. Vivamus ut lobortis nisi. Curabitur orci felis, sollicitudin id orci vitae, dignissim rhoncus lorem. Donec scelerisque suscipit tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum leo ac interdum sagittis. Suspendisse et fringilla felis. Curabitur varius aliquet porttitor.
-
-                                        Fusce non posuere libero. In efficitur ut dui sed congue. Nulla interdum nisi vulputate, tincidunt ante vitae, venenatis orci. Integer auctor fermentum odio, eu tempor purus. Fusce condimentum eros sed justo elementum viverra. Praesent eu lorem posuere, imperdiet nisi eu, cursus dui. Suspendisse convallis sapien pulvinar lacinia iaculis. Suspendisse dictum consequat condimentum. Nulla risus ex, sodales at metus vel, finibus porttitor odio. Integer sem urna, pretium sit amet magna ac, gravida luctus dui. Integer dignissim varius ligula, et auctor arcu pulvinar non.</p>
+                                    <p>Bahwa berdasarkan hal-hal yang telah ditetapkan di atas dengan ini Franchisor dan Franchisee sepakat untuk melaksanakan Perjanjian ini dalam bentuk kerja sama yang untuk selanjutnya disebut sebagai Perjanjian, dengan syarat-syarat dan ketentuan sebagai berikut:</p>
+                                    <br/>
+                                    <h5 className="text-center">Pasal 1</h5>
+                                    <h5 className="text-center">Syarat Syarat</h5>
+                                    <p>Franchisee menyatakan bahwa memenuhi seluruh persyaratan yang ditetapkan oleh Franchisor antara lain:</p>
+                                    <ul>
+                                        <li>Menyediakan biaya franchise yang harus disetor ke rekening Franchisor. Untuk detail biaya dijelaskan pada pasal 2</li>
+                                        <li>Menyediakan lahan tanah atau lahan bangunan yang akan ditempati sebagai tempat berjualan</li>
+                                    </ul>
+                                    <a href="#">Pelajari lebih lanjut</a>
                                 </div>
                             </div>
                         </div>
